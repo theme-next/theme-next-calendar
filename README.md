@@ -41,16 +41,16 @@ npm install --save git://github.com/bitwater1997/hexo-generator-calendar.git
       enable: true
       language: zh-CN
       single: true
-      root: calendar/
+      root: /calendar/
     ```
 
 ### 渲染日历
 
 在指定的位置呈现日历云
 
-我选择的位置是sidebar中的用户信息后面, 当然可以根据喜好更改
+我选择的位置是sidebar中的用户后面, 当然可以根据喜好更改
 
-在文件`themes/next/layout/_macro/sidebar.swig` 中的 133行
+在文件`themes/next/layout/_macro/sidebar.swig` 中的 133行后添加
 
 ```html
 {# Blogroll #}
@@ -68,4 +68,4 @@ npm install --save git://github.com/bitwater1997/hexo-generator-calendar.git
 
 ### 感谢
 
-该插件的实现离不开@[howiefh](https://github.com/howiefh)的开源支持, 部分代码是提取自他为Landscape-F制作的日历插件, 我将其修改适配到了next主题.
+该插件的实现离不开@[howiefh](https://github.com/howiefh)的开源支持, 部分代码是提取自他为Landscape-F制作的日历插件, 我将其修改后适配到了next主题.
