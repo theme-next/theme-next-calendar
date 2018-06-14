@@ -11,7 +11,7 @@
 首先安装hexo插件
 
 ```
-npm install --save git://github.com/bitwater1997/hexo-generator-calendar.git
+npm install --save git://github.com/bitwater1997/Hexo-Next-Plugins-Calendar#hexo
 ```
 
 然后安装next部分
@@ -68,4 +68,7 @@ npm install --save git://github.com/bitwater1997/hexo-generator-calendar.git
 
 ### 感谢
 
-该插件的实现离不开@[howiefh](https://github.com/howiefh)的开源支持, 部分代码是提取自他为Landscape-F制作的日历插件, 我将其修改后适配到了next主题.
+hexo 插件部分是fork自@[howiefh](https://github.com/howiefh), MIT协议, 为了方便整合在了一起,放在hexo分支下.
+
+该日历插件的实现离不开@[howiefh](https://github.com/howiefh)的开源支持, 部分代码是提取自他为Landscape-F制作的日历插件, 我将其修改后适配到了next主题.
+
