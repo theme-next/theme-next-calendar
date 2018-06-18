@@ -53,16 +53,15 @@ npm install --save git://github.com/bitwater1997/Hexo-Next-Plugins-Calendar#hexo
 在文件`themes/next/layout/_macro/sidebar.swig` 中的 133行后添加
 
 ```html
-{# Blogroll #}
 <!-- CloudCalendar -->
-<div class="widget-wrap">
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
 	<div class="widget" id="CloudCalendar"></div>
 </div>
 ```
 
 ### 自定义日历颜色
 
-颜色的定义是放在CloudCalendar.styl中的, 大部分我都添加了注释, 少部分用不到的可以自行推断
+颜色的定义是放在CloudCalendar.styl中的, 大部分我都添加了注释, 少部分用不到的可以自行推断, 或者也直接可以在chrome控制台里面改
 
 
 
