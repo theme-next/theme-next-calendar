@@ -2,7 +2,7 @@
 
 一个简洁的hexo-next日历云插件
 
-![](show.png)
+![](example.png)
 
 ### 安装
 
@@ -20,16 +20,16 @@ npm install --save git://github.com/bitwater1997/Hexo-Next-Plugins-Calendar#hexo
 
 -   CloudCalendar.swig   -> themes/next/layout/_third-party/CloudCalendar.swig
 -   CloudCalendar.styl     -> themes/next/source/css/_common/components/third-party/CloudCalendar.styl
--   CloudCalendar.js        -> themes/next/source/lib/CloudCalendar/CloudCalendar.js
--   languages.js                -> themes/next/source/lib/CloudCalendar/languages.js
+-   CloudCalendar.min.js        -> themes/next/source/lib/CloudCalendar/CloudCalendar.min.js 
+-   languages.min.js                 -> themes/next/source/lib/CloudCalendar/languages.min.js 
 
 然后把这四个文件导入到主题中
 
-1.  在文件`themes/next/source/css/_common/components/third-party/third-party.styl` 最后加入
+1.  在`themes/next/source/css/_common/components/third-party/third-party.styl` 最后加入
 
     `@import "CloudCalendar" if hexo-config('CloudCalendar.enable');`
 
-2.  在文件`/home/bitwater/Desktop/Blog/themes/next/layout/_layout.swig`最后加入
+2.  在`/home/bitwater/Desktop/Blog/themes/next/layout/_layout.swig`最后加入
 
     `{% include '_third-party/CloudCalendar.swig' %}`
 
@@ -48,9 +48,9 @@ npm install --save git://github.com/bitwater1997/Hexo-Next-Plugins-Calendar#hexo
 
 在指定的位置呈现日历云
 
-我选择的位置是sidebar中的用户后面, 当然可以根据喜好更改
+建议放在sidebar中的用户头像下面, 具体视主题而定
 
-在文件`themes/next/layout/_macro/sidebar.swig` 中的 133行后添加
+在文件`themes/next/layout/_macro/sidebar.swig` 适当位置后添加
 
 ```html
 <!-- CloudCalendar -->
@@ -61,13 +61,9 @@ npm install --save git://github.com/bitwater1997/Hexo-Next-Plugins-Calendar#hexo
 
 ### 自定义日历颜色
 
-颜色的定义是放在CloudCalendar.styl中的, 大部分我都添加了注释, 少部分用不到的可以自行推断, 或者也直接可以在chrome控制台里面改
-
-
+日历插件内各元素的颜色都是可定制的, 可以通过修改CloudCalendar.styl文件来达到更好的效果.
 
 ### 感谢
 
-hexo 插件部分是fork自@[howiefh](https://github.com/howiefh), MIT协议, 为了方便整合在了一起,放在hexo分支下.
-
-该日历插件的实现离不开@[howiefh](https://github.com/howiefh)的开源支持, 部分代码是提取自他为Landscape-F制作的日历插件, 我将其修改后适配到了next主题.
+该日历插件的提取自Landscape-F主题, 修改后适配next主题.
 
