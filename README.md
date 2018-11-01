@@ -21,7 +21,7 @@ npm install --save git://github.com/icecory/Hexo-Next-Plugins-Calendar#hexo
 - 把`sidebar.swig`放到`_data`目录下
 - 把`calendar.styl`放到_data目录下重命名为`styles.styl`
 
-3. 修改`theme/next/layout/_layout.swig b/layout/_layout.swig`
+3. 修改`theme/next/layout/_layout.swig`
 在最后的`include`后面添加
 ```
 {% include '../../../source/_data/calendar.swig' %}
