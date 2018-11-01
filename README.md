@@ -11,7 +11,7 @@
 首先安装hexo插件
 
 ```
-npm install --save git://github.com/bitwater1997/Hexo-Next-Plugins-Calendar#hexo
+npm install --save git://github.com/icecory/Hexo-Next-Plugins-Calendar#hexo
 ```
 
 然后安装next部分
@@ -29,7 +29,7 @@ npm install --save git://github.com/bitwater1997/Hexo-Next-Plugins-Calendar#hexo
 
     `@import "CloudCalendar" if hexo-config('CloudCalendar.enable');`
 
-2.  在`/home/bitwater/Desktop/Blog/themes/next/layout/_layout.swig`最后加入
+2.  在`themes/next/layout/_layout.swig`最后加入
 
     `{% include '_third-party/CloudCalendar.swig' %}`
 
