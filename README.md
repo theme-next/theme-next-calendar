@@ -14,12 +14,10 @@ npm install --save git://github.com/icecory/Hexo-Next-Plugins-Calendar#hexo
 
 2. 然后安装next部分
 
-在顶层`source`目录下(注意不是`theme`中的)创建lib目录与_data目录
+在顶层`source`目录下(注意不是`theme`中的)创建_data目录
 
-- 把calendar.min.js, languages.min.js放到lib目录下
-- 把calendar.swig放到_data目录下
-- 把sidebar.swig放到_data目录下
-- 把calendar.styl放到_data目录下重命名为`styles.styl`
+- 把calendar.min.js, languages.min.js放到theme/next/source/lib目录下
+- 把calendar.swig, sidebar.swig, calendar.styl放到_data目录下
 
 3. 修改`theme/next/layout/_layout.swig`, 在最后添加一行`{% include '../../../source/_data/calendar.swig' %}`
 
@@ -27,20 +25,13 @@ npm install --save git://github.com/icecory/Hexo-Next-Plugins-Calendar#hexo
 ```ymal
 custom_file_path:
   sidebar: source/_data/sidebar.swig
-  styles: source/_data/styles.styl
+  styles: source/_data/calendar.styl
 
 CloudCalendar:
   enable: true
   language: zh-CN
   single: true
   root: /calendar/
-```
-
-5. 由于在source中添加lib文件夹, 所以要设置hexo不要渲染lib文件夹中的内容
-配置顶层`_config.yml`
-```ymal
-skip_render:
-  - lib/*
 ```
 
 ### 渲染日历
