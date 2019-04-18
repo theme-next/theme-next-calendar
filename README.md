@@ -10,13 +10,13 @@
 
 ```shell
 npm install --save git://github.com/icecory/theme-next-calendar#hexo
-git clone --depth=1 git@github.com/icecory/theme-next-calendar themes/next/source/lib/
+git clone --depth=1 git@github.com/icecory/theme-next-calendar themes/next/source/lib/calendar
 ```
 
 2. 配置
 把sidebar.swig, calendar.styl放到${root}/source/_data目录下
 
-在`themes/next/layout/_layout.swig`最后加入`{% include '../source/lib/theme-next-calendar/calendar.swig' %}`
+在`themes/next/layout/_layout.swig`最后加入`{% include '../source/lib/calendar/calendar.swig' %}`
 
 4. 在next主题配置文件`_config.yml`配置
 ```ymal
