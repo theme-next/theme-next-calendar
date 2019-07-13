@@ -9,31 +9,22 @@
 1. 首先安装hexo插件
 
 ```shell
-npm install --save git://github.com/icecory/theme-next-calendar#hexo
-git clone --depth=1 git@github.com/icecory/theme-next-calendar themes/next/source/lib/calendar
+npm install --save github:theme-next/theme-next-calendar
 ```
 
-2. 配置
-把sidebar.swig, calendar.styl放到${root}/source/_data目录下
-
-在`themes/next/layout/_layout.swig`最后加入`{% include '../source/lib/calendar/calendar.swig' %}`
-
-4. 在next主题配置文件`_config.yml`配置
-```ymal
-custom_file_path:
-  sidebar: source/_data/sidebar.swig
-  styles: source/_data/calendar.styl
-
+2. 在next主题配置文件`_config.yml`配置
+```yaml
 CloudCalendar:
   enable: true
   language: zh-CN
   single: true
   root: /calendar/
+  #disableSidebar: false
 ```
 
 ### 渲染日历
 
-默认是在边栏中渲染, 当然也可以在任何位置显示, 只要移动`sidebar.swig`中的代码即可
+默认是在边栏中渲染, 当然也可以在任何位置显示, 只要`disableSidebar`禁用，并添加`sidebar.swig`中的代码至你希望的位置
 
 ### 自定义日历颜色
 
