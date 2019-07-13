@@ -19,6 +19,8 @@ CloudCalendar:
   language: zh-CN
   single: true
   root: /calendar/
+  calendarCdn: //cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js
+  langCdn: //cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js
   #disableSidebar: false
 ```
 

@@ -1,7 +1,7 @@
 <!-- calendar widget -->
 {% if theme.CloudCalendar.enable %}
-    <script src="/lib/calendar/calendar.min.js"></script>
-    <script src="/lib/calendar/languages.min.js"></script>
+    <script src="{{CloudCalendar.calendarCdn}}"></script>
+    <script src="{{CloudCalendar.langCdn}}"></script>
     <script type="text/javascript">
     $(function() {
         $('#CloudCalendar').aCalendar('{{theme.CloudCalendar.language}}',
