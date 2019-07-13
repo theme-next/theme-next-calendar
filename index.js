@@ -11,6 +11,10 @@ hexo.config.calendar = assign({
 hexo.extend.generator.register('calendar', require('./lib/generator'));
 
 hexo.extend.filter.register('theme_inject', function(injects) {
+  if (!hexo.theme.config.CloudCalendar) {
+    hexo.log.warn("Please add calendar config.");
+    return;
+  }
   if (!hexo.theme.config.CloudCalendar.disableSidebar) {
     injects.sidebar.file('calendar-sidebar', path.join(__dirname ,'sidebar.swig'), {}, {cache: true});
   }
